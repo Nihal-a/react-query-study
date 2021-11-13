@@ -8,6 +8,7 @@ import {
     Link
   } from "react-router-dom";
 import Home from  "./components/Home/Home"
+import {ReactQueryDevtools} from "react-query/devtools"
 
 function App() {
     const queryClient = new QueryClient()
@@ -21,6 +22,7 @@ function App() {
                         </Route>
                     </Switch>
                 </Router>
+                <ReactQueryDevtools/>
             </QueryClientProvider>
         </ChakraProvider>
     )
