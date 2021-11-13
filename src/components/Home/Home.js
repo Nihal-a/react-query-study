@@ -50,6 +50,7 @@ function Home() {
             }}
             disabled={data.meta.pagination.links.previous == null }
             >Prev</Button>
+            <Text>Current page : {pageId}</Text>
             <Button colorScheme="green" onClick={() => {
                 history.push(`/${pageId + 1}`)
             }}>Next</Button>
