@@ -17,7 +17,7 @@ function App() {
             <QueryClientProvider client={queryClient}>
                 <Router>
                     <Switch>
-                        <Route exact>
+                        <Route exact path="/:id">
                             <Home/>
                         </Route>
                     </Switch>
